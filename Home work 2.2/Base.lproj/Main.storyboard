@@ -20,15 +20,47 @@
                                 <rect key="frame" x="20" y="85" width="374" height="168"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="o0e-Vf-8K1">
+                                <rect key="frame" x="17" y="366" width="59" height="145"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Red:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DfR-gr-Nee">
+                                        <rect key="frame" x="0.0" y="0.0" width="59" height="30"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Green:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xo2-Mk-sCE">
+                                        <rect key="frame" x="0.0" y="65" width="59" height="22"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Blue:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V1u-B2-zxp">
+                                        <rect key="frame" x="0.0" y="122" width="59" height="23"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="o0e-Vf-8K1" secondAttribute="height" multiplier="59:145" id="xXy-HD-tc7"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="linkColor"/>
                         <constraints>
                             <constraint firstItem="wU9-UV-e8n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="41" id="7nQ-sh-wqW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wU9-UV-e8n" secondAttribute="trailing" constant="20" id="Frp-x5-E6Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o0e-Vf-8K1" secondAttribute="bottom" constant="351" id="Hjp-C2-WUw"/>
                             <constraint firstItem="wU9-UV-e8n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UzB-gY-G37"/>
                             <constraint firstItem="wU9-UV-e8n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XAR-zS-9yX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wU9-UV-e8n" secondAttribute="bottom" constant="609" id="aov-U4-tWe"/>
+                            <constraint firstItem="o0e-Vf-8K1" firstAttribute="top" secondItem="wU9-UV-e8n" secondAttribute="bottom" constant="113" id="sOt-NI-onm"/>
+                            <constraint firstItem="o0e-Vf-8K1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="xur-yG-akC"/>
                         </constraints>
                     </view>
                     <connections>
